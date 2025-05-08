@@ -180,8 +180,9 @@ function startFalling() {
 }
 
 function generarIntercalado() {
+  // selecciono pantalla pequeña a 480px
   const isMobile = window.matchMedia('(max-width:480px)').matches
-
+  // si esta en movil 30% mas de rojos que en las demas
   const redChance = isMobile ? 0.3 : 0.1
 
   if (Math.random() < redChance) {
