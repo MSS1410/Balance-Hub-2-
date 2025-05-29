@@ -2,6 +2,7 @@ import { motorColors } from './colorsLogic.js'
 import { generarHome } from '../home/home.js'
 import { motorFalling } from '../falling/fallingLogic.js'
 import { saveProgress } from '../../utils/storage.js'
+
 const colorTranslations = {
   rojo: 'Red',
   verde: 'Green',

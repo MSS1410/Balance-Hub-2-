@@ -1,10 +1,10 @@
-const STORAGE_KEY = 'balance-hub-progress'
+const USER_PROGRESS = 'balance-hub-progress'
 
-export function saveProgress(stage, data = {}) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify({ stage, data }))
+export function saveProgress(BalancedZone, data = {}) {
+  localStorage.setItem(USER_PROGRESS, JSON.stringify({ BalancedZone, data }))
 }
 
 export function loadProgress() {
-  const raw = localStorage.getItem(STORAGE_KEY)
-  return raw ? JSON.parse(raw) : { stage: null, data: {} }
+  const resultSave = localStorage.getItem(USER_PROGRESS)
+  return resultSave ? JSON.parse(resultSave) : { stage: null, data: {} }
 }
